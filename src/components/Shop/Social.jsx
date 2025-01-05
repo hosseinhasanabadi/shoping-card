@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-export default class Social extends Component {
-    render() {
+export default function Social (props) {
+   
         let{href,img} = this.props
-        console.log(this.props, 'props');
+      
         return (
             <li>
                 <a href={href} target="_blank">
@@ -11,5 +11,5 @@ export default class Social extends Component {
                 </a>
             </li>
         )
-    }
+    
 }
